@@ -1,0 +1,16 @@
+<script>
+//...的使用
+//这里的...不是省略号了,是对象扩展符
+let arr = [1,2,3]
+console.log(...arr)
+ //1,2,3
+let MapState = {
+  count: 'count',
+  sex: 'text'
+};
+let json = {
+  'a': '我是json自带的',
+  ...MapState
+};
+console.log(json);//{a: "我是json自带的", count: "count", sex: "text"}
+</script>
